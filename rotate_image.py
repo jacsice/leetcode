@@ -29,3 +29,13 @@ class Solution:
         for i in xrange(m_len):
             for j in xrange(m_len-i):
                 matrix[i][j] ,matrix[m_len-j][m_len-i] = matrix[m_len-j][m_len-i], matrix[i][j]
+
+
+# Time:  O(n^2)
+# Space: O(n^2)
+class Solution2:
+    # @param matrix, a list of lists of integers
+    # @return a list of lists of integers
+    def rotate(self, matrix):
+        return [list(reversed(x)) for x in zip(*matrix)]
+        
