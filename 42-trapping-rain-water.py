@@ -60,7 +60,6 @@ class Solution:
                 else:
                     ans += right_max - height[right]
                 right -= 1
-        print(ans)
         return ans
 
 
